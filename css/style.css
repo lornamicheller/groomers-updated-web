@@ -551,6 +551,17 @@ label {
 
 .slider-area.home-four {
 	background-position: left center;
+	
+}
+.coverr:hover {
+	background-size: auto;
+	transform: perspective(0deg) rotateX(0deg) rotateY(0deg);
+	transform:  perspective(110px) rotateX(0deg) rotateY(0deg);
+	transition: all 400ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s;
+	transition-property: all;
+	transition-duration: 400ms;
+	transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	transition-delay: 0s;
 }
 
 /* .dogback {
@@ -595,23 +606,27 @@ label {
 .slider-content {
 	padding-top: 150px;
 }
+.transform{
+	will-change: auto;
+	transform: perspective(110px) rotateX(0deg) rotateY(0deg);
+}
 
-.dogbone{
-background-color: rgba(0, 0, 0, 0);
-background-position-x: 0%;
-background-position-y: 0%;
-background-repeat: repeat;
-background-attachment: scroll;
-background-image: url("../img/slider/home22.png");
-background-size: auto;
-background-origin: padding-box;
-background-clip: border-box;
-background-repeat: no-repeat;
-}
+/* .dogbone{
+border-top: 1px solid #00e400;
+
+} */
 .animated:hover{
-	animation: movebounce 1s linear infinite;
+	animation: bounce 1s linear infinite;
+	
 }
+
 .animated2:hover{
+	animation: movebounce 1s linear infinite;
+	
+}
+
+
+/* .animated2:hover{
 	animation-name: movebounce;
 	animation-duration: 3s;
 	animation-timing-function: initial;
@@ -620,7 +635,7 @@ background-repeat: no-repeat;
 	animation-direction: normal;
 	animation-fill-mode: none;
 	animation-play-state: running;
-}
+} */
 
 .home-two-slider .slider-content {
 	padding-top: 70px;
